@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+*.log
+*.zip
+article.html
+dryclean-site/
+.py
+requirements.txt
+.vercel

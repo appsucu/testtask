@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NovaClean Eco — преміум хімчистка з використанням екологічних технологій. Еко-догляд за одягом, взуттям та текстилем у Львові. Еко-аналіз тканин, безкоштовна доставка.">
+  <meta name="keywords" content="хімчистка, еко, екологічні технології, еко-чистка, Львів, прання, чистка одягу, NovaClean">
+  <meta name="author" content="NovaClean Eco">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="NovaClean Eco — Хімчистка майбутнього">
+  <meta property="og:description" content="Перша в Україні хімчистка з еко-експертизою. Еко-аналіз тканин, еко-засоби, безкоштовна доставка.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <title>NovaClean Eco — Хімчистка майбутнього</title>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <div class="header__logo" data-page="home" onclick="showPage('home')" style="cursor:pointer">
+      <div class="header__logo-icon">
+        <i class="fa-solid fa-droplet"></i>
+      </div>
+      <div class="header__logo-text">Nova<span>Clean</span></div>
+    </div>
+
+    <nav class="header__nav" id="mainNav">
+      <a data-page="home" class="active">Головна</a>
+      <a data-page="about">Про нас</a>
+      <a data-page="pricing">Прайс</a>
+      <a data-page="blog">Блог</a>
+      <a data-page="contacts">Контакти</a>
+      <a data-page="policy">Політики</a>
+      <a href="https://nova-clean-eco.vercel.app" target="_blank" rel="noopener noreferrer">Деплой</a>
+    </nav>
+
+    <a data-page="contacts" class="header__cta">Замовити зараз</a>
+
+    <button class="header__burger" id="burgerBtn" aria-label="Відкрити меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== PAGE: ГОЛОВНА ===== -->
+<div id="home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <i class="fa-solid fa-leaf hero__leaf hero__leaf--1" aria-hidden="true"></i>
+    <i class="fa-solid fa-leaf hero__leaf hero__leaf--2" aria-hidden="true"></i>
+    <div class="container hero__container">
+      <div class="hero__inner hero__inner--centered">
+        <div class="hero__content">
+          <div class="hero__badge hero__badge--centered">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Хімчистка майбутнього • Еко-сертифіковано</span>
+          </div>
+          <h1>Хімчистка, <br>де <span class="highlight">еко на першому місці</span></h1>
+          <p class="hero__desc hero__desc--centered">NovaClean Eco — перша в Україні хімчистка з еко-експертизою, яка сканує тканини та підбирає ідеальний режим очищення. Без шкоди для речей та планети.</p>
+          <div class="hero__actions hero__actions--centered">
+            <a data-page="contacts" class="btn btn--primary btn--lg"><i class="fa-solid fa-truck-fast"></i> Замовити доставку</a>
+            <a data-page="pricing" class="btn btn--outline btn--lg"><i class="fa-solid fa-list-check"></i> Дивитись прайс</a>
+          </div>
+          <div class="hero__stats hero__stats--centered">
+            <div class="hero__stat">
+              <strong>12 000+</strong>
+              <span>задоволених клієнтів</span>
+            </div>
+            <div class="hero__stat">
+              <strong>99.8%</strong>
+              <span>ефективність очистки</span>
+            </div>
+            <div class="hero__stat">
+              <strong>48 год</strong>
+              <span>термін виконання</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section>
+    <div class="container">
+      <div class="section-title fade-up">
+        <h2>Чому обирають NovaClean Eco</h2>
+        <p>Інноваційні технології у поєднанні з еко-відповідальністю для бездоганного догляду за вашими речами</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="card card--active fade-up">
+          <div class="card__icon">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h3>Еко-аналіз тканин</h3>
+          <p>Наші технологи аналізують тип тканини та характер забруднення, щоб підібрати оптимальний і безпечний режим очищення для кожної речі.</p>
+        </div>
+
+        <div class="card fade-up">
+          <div class="card__icon card__icon--accent">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3>100% Еко-засоби</h3>
+          <p>Використовуємо біорозкладні сертифіковані засоби без ПФОС, фосфатів та хлору. Безпечно для алергіків та дітей.</p>
+        </div>
+
+        <div class="card fade-up">
+          <div class="card__icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3>Доставка 24/7</h3>
+          <p>Безкоштовна доставка по Львову. Курʼєр забере та привезе ваші речі за 48 годин. Відстеження замовлення онлайн.</p>
+        </div>
+
+        <div class="card fade-up">
+          <div class="card__icon card__icon--accent">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Гарантія якості</h3>
+          <p>Якщо пляму не вдалось вивести — повторна обробка безкоштовно. Страхування речей до 50 000 грн.</p>
+        </div>
+
+        <div class="card fade-up">
+          <div class="card__icon">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <h3>Експрес за 24 год</h3>
+          <p>Терміновий режим для тих, хто не може чекати. Готові за 24 години з повною обробкою Еко-контролем якості.</p>
+        </div>
+
+        <div class="card fade-up">
+          <div class="card__icon card__icon--accent">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <h3>Онлайн-трекінг</h3>
+          <p>Статус замовлення у реальному часі через особистий кабінет. SMS-сповіщення про кожен етап обробки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image row -->
+  <section style="background: var(--color-surface-alt);">
+    <div class="container">
+      <div class="section-title fade-up">
+        <h2>Як ми працюємо</h2>
+        <p>Три простих кроки до ідеальної чистоти</p>
+      </div>
+      <div class="features-grid">
+        <div class="img-card fade-up">
+          <img src="images/process.jpg" alt="Еко-аналіз тканин">
+          <div class="img-card__body">
+            <h3>1. Еко-сканування</h3>
+            <p>Експрес-діагностика визначає тип тканини, стійкість кольору та характер забруднення за 15 секунд.</p>
+          </div>
+        </div>
+        <div class="img-card fade-up">
+          <img src="images/eco.png" alt="Еко-обробка">
+          <div class="img-card__body">
+            <h3>2. Еко-обробка</h3>
+            <p>Дбайлива обробка сертифікованими еко-засобами за індивідуальним еко-протоколом.</p>
+          </div>
+        </div>
+        <div class="img-card fade-up">
+          <img src="images/delivery.jpg" alt="Доставка">
+          <div class="img-card__body">
+            <h3>3. Доставка додому</h3>
+            <p>Курʼєр привезе ідеально чисті речі у захисній упаковці точно вчасно.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="fade-up">Готові довірити свої речі хімчистці майбутнього?</h2>
+      <p class="fade-up">Перше замовлення зі знижкою 20%. Безкоштовна доставка по Львову.</p>
+      <a data-page="contacts" class="btn btn--accent btn--lg fade-up"><i class="fa-solid fa-sparkles"></i> Замовити зараз</a>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== PAGE: ПРО НАС ===== -->
+<div id="about" class="page">
+
+  <section>
+    <div class="container">
+      <div class="about-grid fade-up">
+        <img src="images/interior.jpg" alt="Інтер'єр NovaClean Eco">
+        <div class="about-text">
+          <h2>Ми — NovaClean Eco</h2>
+          <p>Ми — команда технологів, хіміків і IT-спеціалістів, які вірять, що догляд за одягом може бути розумним, безпечним і зручним.</p>
+          <p>NovaClean Eco заснована у 2023 році у Львові з простою ідеєю: обʼєднати можливості екологічних технологій з найсучаснішими еко-засобами для організації хімчистки нового покоління.</p>
+          <p>Ми працюємо за власним еко-протоколом, сформованим на основі 500 000+ зразків тканин і типів забруднень. Це допомагає точно добирати режим обробки та зберігати якість матеріалів.</p>
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="about-stat__num">3</div>
+              <div class="about-stat__label">роки на ринку</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat__num">25+</div>
+              <div class="about-stat__label">фахівців у команді</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat__num">12K+</div>
+              <div class="about-stat__label">обслуговано клієнтів</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section style="background: var(--color-surface-alt);">
+    <div class="container">
+      <div class="section-title fade-up">
+        <h2>Наші цінності</h2>
+        <p>Принципи, на яких будується кожен процес у NovaClean Eco</p>
+      </div>
+      <div class="features-grid">
+        <div class="card fade-up">
+          <div class="card__icon card__icon--accent">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <h3>Екологічність</h3>
+          <p>Ми прагнемо до мінімального впливу на довкілля. Використовуємо біорозкладні засоби, скорочуємо використання води на 40% завдяки еко-оптимізації.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card__icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3>Інновації</h3>
+          <p>Постійно вдосконалюємо еко-протоколи та обладнання. Партнерство з провідними технологічними компаніями допомагає впроваджувати передові рішення.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card__icon card__icon--accent">
+            <i class="fa-solid fa-handshake-simple"></i>
+          </div>
+          <h3>Клієнтоцентричність</h3>
+          <p>Кожен клієнт — це партнер. Персональний менеджер, зворотний звʼязок після кожного замовлення, програма лояльності.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="timeline-section" style="position: relative; overflow: hidden;">
+    <i class="fa-solid fa-leaf timeline__leaf timeline__leaf--1 parallax-leaf" data-speed="0.1" aria-hidden="true"></i>
+    <i class="fa-solid fa-leaf timeline__leaf timeline__leaf--2 parallax-leaf" data-speed="-0.15" aria-hidden="true"></i>
+    <i class="fa-solid fa-leaf timeline__leaf timeline__leaf--3 parallax-leaf" data-speed="0.08" aria-hidden="true"></i>
+    <i class="fa-solid fa-leaf timeline__leaf timeline__leaf--4 parallax-leaf" data-speed="-0.1" aria-hidden="true"></i>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="section-title fade-up">
+        <h2>Наша історія</h2>
+        <p>Від ідеї до лідера ринку за 3 роки</p>
+      </div>
+      <div class="timeline fade-up">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__year">2023</div>
+            <p>Заснування компанії. Перший прототип Еко-системи аналізу тканин. 50 перших клієнтів.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__year">2024</div>
+            <p>Запуск власного виробництва. Еко-сертифікація. Партнерство з 15 брендами одягу. 3 000 клієнтів.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__year">2025</div>
+            <p>Вихід на 5 міст. Власна система контролю якості з точністю 99.8%. Власний додаток. 12 000+ клієнтів.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__year">2026</div>
+            <p>Плани на масштабування по всій Україні. Запуск програми франчайзингу та B2B-рішень для готелів.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="fade-up">Приєднуйтесь до 12 000+ задоволених клієнтів</h2>
+      <p class="fade-up">Довіряйте свої речі команді професіоналів та передовим екологічним технологіям.</p>
+      <a data-page="contacts" class="btn btn--accent btn--lg fade-up"><i class="fa-solid fa-envelope"></i> Зв'язатись з нами</a>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== PAGE: ПРАЙС ===== -->
+<div id="pricing" class="page">
+
+  <section>
+    <div class="container">
+      <div class="section-title fade-up">
+        <h2>Тарифні плани</h2>
+        <p>Оберіть зручний тариф для регулярного або разового замовлення</p>
+      </div>
+
+      <div class="pricing-grid fade-up">
+        <!-- Basic -->
+        <div class="pricing-card">
+          <h3>Базовий</h3>
+          <div class="pricing-card__price">249<small> грн</small></div>
+          <p style="color: var(--color-text-muted); font-size: 0.9rem;">Одна річ, без підписки</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Еко-аналіз тканини</li>
+            <li><i class="fa-solid fa-check"></i> Стандартне очищення</li>
+            <li><i class="fa-solid fa-check"></i> Виконання за 72 год</li>
+            <li><i class="fa-solid fa-check"></i> Безкоштовна доставка по Львову</li>
+            <li><i class="fa-solid fa-check"></i> Базова упаковка</li>
+          </ul>
+          <a data-page="contacts" class="btn btn--secondary">Замовити</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">⭐ Популярний</div>
+          <h3>Преміум</h3>
+          <div class="pricing-card__price">599<small> грн/міс</small></div>
+          <p style="color: var(--color-text-muted); font-size: 0.9rem;">До 5 речей на місяць</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Розширений Еко-аналіз</li>
+            <li><i class="fa-solid fa-check"></i> Глибока еко-очистка</li>
+            <li><i class="fa-solid fa-check"></i> Виконання за 48 год</li>
+            <li><i class="fa-solid fa-check"></i> Безкоштовна доставка</li>
+            <li><i class="fa-solid fa-check"></i> Преміум-упаковка</li>
+            <li><i class="fa-solid fa-check"></i> Персональний менеджер</li>
+            <li><i class="fa-solid fa-check"></i> Страхування до 30 000 грн</li>
+          </ul>
+          <a data-page="contacts" class="btn btn--primary">Підписатись</a>
+        </div>
+
+        <!-- VIP -->
+        <div class="pricing-card">
+          <h3>VIP</h3>
+          <div class="pricing-card__price">1299<small> грн/міс</small></div>
+          <p style="color: var(--color-text-muted); font-size: 0.9rem;">Необмежено речей</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Повний Еко-аналіз + консультація</li>
+            <li><i class="fa-solid fa-check"></i> Преміум-еко-обробка</li>
+            <li><i class="fa-solid fa-check"></i> Експрес за 24 год</li>
+            <li><i class="fa-solid fa-check"></i> Безкоштовна доставка + забір</li>
+            <li><i class="fa-solid fa-check"></i> VIP-упаковка</li>
+            <li><i class="fa-solid fa-check"></i> Виділений менеджер 24/7</li>
+            <li><i class="fa-solid fa-check"></i> Страхування до 50 000 грн</li>
+            <li><i class="fa-solid fa-check"></i> Знижки на хім. реставрацію</li>
+          </ul>
+          <a data-page="contacts" class="btn btn--secondary">Обрати VIP</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing table -->
+  <section style="background: var(--color-surface-alt);">
+    <div class="container">
+      <div class="section-title fade-up">
+        <h2>Прайс на окремі послуги</h2>
+        <p>Прозорі ціни. Без прихованих доплат.</p>
+      </div>
+      <div class="fade-up" style="overflow-x: auto;">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>Послуга</th>
+              <th>Опис</th>
+              <th>Ціна</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Сорочка / блузка</td><td>Повне очищення + випрасування</td><td>149 грн</td></tr>
+            <tr><td>Костюм (2 од.)</td><td>Піджак + штани, професійна обробка</td><td>399 грн</td></tr>
+            <tr><td>Пуховик / куртка</td><td>Глибока очистка + відновлення наповнювача</td><td>549 грн</td></tr>
+            <tr><td>Пальто (вовна)</td><td>Делікатна обробка вовняних виробів</td><td>499 грн</td></tr>
+            <tr><td>Весільна сукня</td><td>Спеціалізована обробка + преміум-упаковка</td><td>1 299 грн</td></tr>
+            <tr><td>Шкіряна куртка</td><td>Очистка + кондиціонування шкіри</td><td>699 грн</td></tr>
+            <tr><td>Ковдра / подушка</td><td>Гіпоалергенна обробка</td><td>349 грн</td></tr>
+            <tr><td>Взуття (пара)</td><td>Очистка + дезінфекція + відновлення кольору</td><td>299 грн</td></tr>
+            <tr><td>Килим (м²)</td><td>Глибока еко-очистка + антистатик</td><td>120 грн/м²</td></tr>
+            <tr><td>Експрес (+24 год.)</td><td>Будь-яка послуга у прискореному режимі</td><td>+50%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="fade-up">Не знаєте, що обрати?</h2>
+      <p class="fade-up">Зверніться до нашого менеджера — допоможемо підібрати оптимальний варіант.</p>
+      <a data-page="contacts" class="btn btn--accent btn--lg fade-up"><i class="fa-solid fa-phone"></i> Отримати консультацію</a>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== PAGE: БЛОГ ===== -->
+<div id="blog" class="page">
+
+  <section>
+    <div class="container">
+      <div class="section-title fade-up">
+        <h2>Блог NovaClean Eco</h2>
+        <p>Корисні статті, поради з догляду за одягом та новини індустрії</p>
+      </div>
+
+      <div class="blog-grid">
+
+        <!-- Article 1 -->
+        <div class="img-card fade-up">
+          <img src="images/process.jpg" alt="Як еко-підхід змінює хімчистку">
+          <div class="img-card__body">
+            <span class="img-card__tag">Технології</span>
+            <h3>Як екологічні технології змінюють індустрію хімчистки</h3>
+            <p>Від ручного сортування до точного еко-аналізу: як сучасний підхід до очищення тканин підвищує ефективність на 40%.</p>
+            <div class="img-card__meta">
+              <span><i class="fa-regular fa-calendar"></i> 10 квітня 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 5 хв</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="img-card fade-up">
+          <img src="images/blog-stain.png" alt="Видалення плям">
+          <div class="img-card__body">
+            <span class="img-card__tag">Поради</span>
+            <h3>7 правил першої допомоги при плямах</h3>
+            <p>Кава, вино, трава, жир — кожна пляма потребує іншого підходу. Розповідаємо, що робити негайно, а чого категорично не можна.</p>
+            <div class="img-card__meta">
+              <span><i class="fa-regular fa-calendar"></i> 5 квітня 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 4 хв</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="img-card fade-up">
+          <img src="images/eco.png" alt="Еко-засоби">
+          <div class="img-card__body">
+            <span class="img-card__tag">Екологія</span>
+            <h3>Чому еко-ірім хімчистки — це майбутнє</h3>
+            <p>Традиційні хімчистки використовують перхлоретилен — токсичну речовину. Дізнайтесь, як еко-засоби забезпечують таку ж ефективність без шкоди.</p>
+            <div class="img-card__meta">
+              <span><i class="fa-regular fa-calendar"></i> 28 березня 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 6 хв</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="img-card fade-up">
+          <img src="images/process.jpg" alt="Догляд за взуттям">
+          <div class="img-card__body">
+            <span class="img-card__tag">Поради</span>
+            <h3>Як доглядати за взуттям: повний гід</h3>
+            <p>Шкіра, замша, текстиль — кожен матеріал потребує особливого підходу. Повний гід з догляду від наших технологів.</p>
+            <div class="img-card__meta">
+              <span><i class="fa-regular fa-calendar"></i> 20 березня 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 7 хв</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="img-card fade-up">
+          <img src="images/interior.jpg" alt="Чистка килимів">
+          <div class="img-card__body">
+            <span class="img-card__tag">Послуги</span>
+            <h3>Професійна чистка килимів: коли і навіщо</h3>
+            <p>Домашнє прання vs. професійна обробка. Чому килими потребують глибокої очистки мінімум раз на рік та як це подовжує їх термін служби.</p>
+            <div class="img-card__meta">
+              <span><i class="fa-regular fa-calendar"></i> 15 березня 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 5 хв</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="img-card fade-up">
+          <img src="images/hero.png" alt="Майбутнє хімчисток">
+          <div class="img-card__body">
+            <span class="img-card__tag">Тренди</span>
+            <h3>Тренди хімчисток 2026: що змінилось</h3>
+            <p>Роботизація, еко-контроль якості, підписні моделі — аналізуємо ключові тренди індустрії та куди рухається ринок.</p>
+            <div class="img-card__meta">
+              <span><i class="fa-regular fa-calendar"></i> 8 березня 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 8 хв</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== PAGE: КОНТАКТИ ===== -->
+<div id="contacts" class="page">
+
+  <section>
+    <div class="container">
+      <div class="section-title fade-up">
+        <h2>Зв'яжіться з нами</h2>
+        <p>Залиште заявку — ми зателефонуємо протягом 15&nbsp;хвилин у&nbsp;робочий&nbsp;час</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <form class="form fade-up" data-stub="true" id="contactForm">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Ваше ім'я *</label>
+              <input type="text" id="name" name="name" placeholder="Олександр Шевченко" required>
+            </div>
+            <div class="form__group">
+              <label for="phone">Телефон *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+380 XX XXX XX XX" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com">
+          </div>
+          <div class="form__group">
+            <label for="service">Тип послуги</label>
+            <select id="service" name="service">
+              <option value="">Оберіть послугу...</option>
+              <option value="clothes">Одяг</option>
+              <option value="shoes">Взуття</option>
+              <option value="textile">Текстиль / килими</option>
+              <option value="leather">Шкіряні вироби</option>
+              <option value="wedding">Весільна сукня</option>
+              <option value="other">Інше</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Повідомлення</label>
+            <textarea id="message" name="message" placeholder="Опишіть ваше замовлення або задайте питання..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg" id="submitBtn">
+            <i class="fa-solid fa-paper-plane"></i> Надіслати заявку
+          </button>
+          <p style="font-size: 0.82rem; color: var(--color-text-light); text-align: center;">
+            Натискаючи кнопку, ви погоджуєтесь з <a data-page="policy" style="color: var(--color-primary); cursor: pointer; text-decoration: underline;">Політикою конфіденційності</a>
+          </p>
+        </form>
+
+        <div class="contact-info fade-up">
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-info__text">
+              <h4>Адреса</h4>
+              <p>вул. Шевченка, 15<br>Львів, 79000, Україна</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-info__text">
+              <h4>Телефон</h4>
+              <p>+380 (32) 123-45-67<br>+380 (98) 765-43-21</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info__text">
+              <h4>Email</h4>
+              <p>info@novaclean.eco<br>support@novaclean.eco</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="contact-info__text">
+              <h4>Графік роботи</h4>
+              <p>Пн–Пт: 08:00 – 20:00<br>Сб–Нд: 09:00 – 18:00</p>
+            </div>
+          </div>
+
+          <div class="contact-map">
+            <iframe
+              title="Карта NovaClean Eco"
+              src="https://www.google.com/maps?q=%D0%B2%D1%83%D0%BB.%20%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0%2015%2C%20%D0%9B%D1%8C%D0%B2%D1%96%D0%B2&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== PAGE: ПОЛІТИКИ ===== -->
+<div id="policy" class="page">
+
+  <section>
+    <div class="container">
+      <div class="section-title fade-up">
+        <h2>Правова інформація</h2>
+        <p>Ознайомтесь з нашими політиками та умовами використання</p>
+      </div>
+
+      <div class="policy-tabs fade-up">
+        <button class="policy-tab active" data-target="privacy">Конфіденційність</button>
+        <button class="policy-tab" data-target="terms">Умови використання</button>
+        <button class="policy-tab" data-target="cookies">Cookie-політика</button>
+        <button class="policy-tab" data-target="refund">Повернення</button>
+      </div>
+
+      <!-- Privacy Policy -->
+      <div id="privacy" class="policy-section active policy-content fade-up">
+        <h2>Політика конфіденційності</h2>
+        <p><strong>Дата оновлення:</strong> 15 квітня 2026</p>
+
+        <h3>1. Загальні положення</h3>
+        <p>NovaClean Eco (далі — «Компанія») поважає вашу конфіденційність. Ця політика пояснює, які персональні дані ми збираємо, як їх використовуємо та захищаємо відповідно до законодавства України та GDPR.</p>
+
+        <h3>2. Які дані ми збираємо</h3>
+        <ul>
+          <li>Ім'я та прізвище</li>
+          <li>Номер телефону та email</li>
+          <li>Адреса доставки</li>
+          <li>Інформація про замовлення</li>
+          <li>Технічні дані (IP-адреса, тип браузера, cookies)</li>
+        </ul>
+
+        <h3>3. Мета збору даних</h3>
+        <p>Персональні дані використовуються для: обробки замовлень, зв'язку з клієнтами, покращення якості послуг, маркетингових комунікацій (з вашої згоди).</p>
+
+        <h3>4. Захист даних</h3>
+        <p>Ми застосовуємо SSL-шифрування, двофакторну аутентифікацію та регулярні аудити безпеки для захисту ваших даних. Доступ до персональної інформації мають лише уповноважені співробітники.</p>
+
+        <h3>5. Ваші права</h3>
+        <p>Ви маєте право: запитувати доступ до своїх даних, вимагати їх видалення, обмежити обробку, відкликати згоду на маркетингові комунікації. Для цього зверніться на privacy@novaclean.eco.</p>
+
+        <h3>6. Зберігання даних</h3>
+        <p>Ми зберігаємо персональні дані протягом терміну, необхідного для досягнення мети їх збору, але не менше 3 років з моменту останнього замовлення.</p>
+      </div>
+
+      <!-- Terms -->
+      <div id="terms" class="policy-section policy-content">
+        <h2>Умови використання</h2>
+        <p><strong>Дата оновлення:</strong> 15 квітня 2026</p>
+
+        <h3>1. Прийняття умов</h3>
+        <p>Використовуючи сайт та послуги NovaClean Eco, ви підтверджуєте, що ознайомились з цими умовами та згодні з ними.</p>
+
+        <h3>2. Послуги</h3>
+        <p>NovaClean Eco надає послуги хімчистки, прання та догляду за текстильними виробами з використанням сучасних еко-технологій. Замовлення здійснюються через сайт, телефон або мобільний додаток.</p>
+
+        <h3>3. Відповідальність</h3>
+        <p>Компанія несе відповідальність за якість послуг згідно зі стандартами якості. У разі пошкодження речі з вини компанії, ми компенсуємо збитки відповідно до оціночної вартості.</p>
+
+        <h3>4. Оплата</h3>
+        <p>Оплата здійснюється у гривнях (UAH) за безготівковим або готівковим розрахунком. Ціни вказані на сайті та можуть змінюватись з попереднім повідомленням.</p>
+
+        <h3>5. Інтелектуальна власність</h3>
+        <p>Весь контент сайту (тексти, зображення, логотип, дизайн) є власністю NovaClean Eco та захищений авторським правом.</p>
+      </div>
+
+      <!-- Cookie Policy -->
+      <div id="cookies" class="policy-section policy-content">
+        <h2>Cookie-політика</h2>
+        <p><strong>Дата оновлення:</strong> 15 квітня 2026</p>
+
+        <h3>1. Що таке Cookies</h3>
+        <p>Cookies — це невеликі текстові файли, що зберігаються у вашому браузері. Вони допомагають нам забезпечити коректну роботу сайту та покращити ваш досвід використання.</p>
+
+        <h3>2. Типи cookies, які ми використовуємо</h3>
+        <ul>
+          <li><strong>Необхідні:</strong> забезпечують базову функціональність сайту</li>
+          <li><strong>Аналітичні:</strong> допомагають зрозуміти, як відвідувачі використовують сайт</li>
+          <li><strong>Маркетингові:</strong> використовуються для показу релевантної реклами</li>
+          <li><strong>Функціональні:</strong> запам'ятовують ваші налаштування та вподобання</li>
+        </ul>
+
+        <h3>3. Керування cookies</h3>
+        <p>Ви можете відключити cookies через налаштування браузера. Зверніть увагу, що це може вплинути на функціональність сайту.</p>
+      </div>
+
+      <!-- Refund Policy -->
+      <div id="refund" class="policy-section policy-content">
+        <h2>Політика повернення</h2>
+        <p><strong>Дата оновлення:</strong> 15 квітня 2026</p>
+
+        <h3>1. Гарантія якості</h3>
+        <p>Ми гарантуємо якість кожної послуги. Якщо результат не відповідає заявленим стандартам, ми здійснимо повторну обробку безкоштовно.</p>
+
+        <h3>2. Умови повернення коштів</h3>
+        <ul>
+          <li>Повне повернення — у разі пошкодження речі з вини компанії</li>
+          <li>Часткове повернення — у разі невідповідності якості</li>
+          <li>Безкоштовна повторна обробка — якщо пляма не вдалась</li>
+        </ul>
+
+        <h3>3. Строки</h3>
+        <p>Претензія приймається протягом 48 годин з моменту отримання речі. Повернення коштів здійснюється протягом 5 робочих днів.</p>
+
+        <h3>4. Як оформити повернення</h3>
+        <p>Зверніться до нас по телефону +380 (32) 123-45-67 або на email support@novaclean.eco з описом ситуації та номером замовлення.</p>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="header__logo-text" style="color: #fff; font-size: 1.8rem;">Nova<span>Clean</span></div>
+        <p>Перша в Україні хімчистка з еко-експертизою. Еко-догляд, інноваційні технології та бездоганний сервіс з 2023 року.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Навігація</h4>
+        <a data-page="home">Головна</a>
+        <a data-page="about">Про нас</a>
+        <a data-page="pricing">Прайс</a>
+        <a data-page="blog">Блог</a>
+        <a data-page="contacts">Контакти</a>
+      </div>
+      <div class="footer__col">
+        <h4>Послуги</h4>
+        <a data-page="pricing">Чистка одягу</a>
+        <a data-page="pricing">Чистка взуття</a>
+        <a data-page="pricing">Чистка килимів</a>
+        <a data-page="pricing">Шкіряні вироби</a>
+        <a data-page="pricing">Весільні сукні</a>
+      </div>
+      <div class="footer__col">
+        <h4>Контакти</h4>
+        <a href="tel:+380321234567"><i class="fa-solid fa-phone" style="margin-right: 6px; font-size: 0.8rem;"></i> +380 (32) 123-45-67</a>
+        <a href="mailto:info@novaclean.eco"><i class="fa-solid fa-envelope" style="margin-right: 6px; font-size: 0.8rem;"></i> info@novaclean.eco</a>
+        <a href="#"><i class="fa-solid fa-location-dot" style="margin-right: 6px; font-size: 0.8rem;"></i> Львів, вул. Шевченка, 15</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2023–2026 NovaClean Eco. Усі права захищені.</span>
+      <div>
+        <a data-page="policy">Конфіденційність</a> &nbsp;|&nbsp; <a data-page="policy">Умови використання</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ===== COOKIE BANNER ===== -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-banner__inner">
+    <p>
+      🍪 Ми використовуємо cookies для покращення роботи сайту, аналітики та персоналізації контенту. Детальніше — у нашій <a data-page="policy">Cookie-політиці</a>.
+    </p>
+    <div class="cookie-banner__actions">
+      <button class="cookie-banner__accept" id="cookieAccept">Прийняти</button>
+      <button class="cookie-banner__decline" id="cookieDecline">Відхилити</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast">
+  <i class="fa-solid fa-circle-check"></i>
+  <span id="toastMessage"></span>
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
