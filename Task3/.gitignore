@@ -6,6 +6,6 @@ __pycache__/
 *.zip
 article.html
 dryclean-site/
-.py
+*.py
 requirements.txt
 .vercel
