@@ -15,7 +15,7 @@
 
 ## Результат
 
-- ✅ HTML-файли: `Task3/index.html`, `Task3/article.html`.
+- ✅ HTML-файли: `Task3/index.html`
 - ✅ Публічний деплой: https://task3-bbc-news-clean.vercel.app/
 
 ## Короткий опис змін
